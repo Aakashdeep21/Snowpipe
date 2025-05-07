@@ -56,7 +56,8 @@ STORAGE_ALLOWED_LOCATIONS = ('<storage_account_endpoints>');
 
 ![image](https://github.com/user-attachments/assets/2ad3e733-96c8-4c63-875e-dcd503dfccdd)
 
-![image](https://github.com/user-attachments/assets/5758756a-bc8c-490f-a4eb-1ba6d736a8d0)
+![image](https://github.com/user-attachments/assets/25d19c9a-e661-41bd-8036-b22391b67fdc)
+
 
 <p>The following example creates an integration that explicitly limits external stages that use the integration to reference either of two containers and paths. In a later step, we will create an external stage that references one of these containers and paths.</p>
 <p><strong>&nbsp;</strong></p>
