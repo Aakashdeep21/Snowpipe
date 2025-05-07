@@ -42,7 +42,15 @@
 
 <p><strong>Creating a Cloud Storage Integration in Snowflake</strong></p>
 
-![image](https://github.com/user-attachments/assets/397fe678-bcfd-4c5a-b8ea-f2fa15784c31)
+```sql
+CREATE OR REPLACE STORAGE INTEGRATION <storage_integration_name>
+TYPE = EXTERNAL_STAGE
+STORAGE_PROVIDER = 'AZURE'
+ENABLED = True
+AZURE_TENANT_ID = '<your_azure_tenant_id>'
+STORAGE_ALLOWED_LOCATIONS = ('<storage_account_endpoints>');
+```
+
 
 <p>To find your tenant ID, log into the Azure portal and click&nbsp;<strong>Azure Active Directory</strong>&nbsp;&raquo;&nbsp;<strong>Properties</strong>. The tenant ID is displayed in the&nbsp;<strong>Tenant ID</strong>&nbsp;field.</p>
 
