@@ -40,7 +40,7 @@
 
 ![image](https://github.com/user-attachments/assets/2ae81f2e-dd90-436f-aa2e-e754a48e297a)
 
-<p><strong>Creating a Cloud Storage Integration in Snowflake</strong></p>
+## Creating a Cloud Storage Integration in Snowflake
 
 ```sql
 CREATE OR REPLACE STORAGE INTEGRATION <storage_integration_name>
@@ -65,11 +65,13 @@ STORAGE_ALLOWED_LOCATIONS = ('<storage_account_endpoints>');
 
 ![image](https://github.com/user-attachments/assets/a1be04f9-227c-492e-9fec-215252afa1ba)
 
-<p><strong>Step 2: Grant Snowflake Access to the Storage Locations</strong></p>
-<ol>
-<li>Execute the&nbsp;<a href="https://docs.snowflake.com/en/sql-reference/sql/desc-integration">DESCRIBE INTEGRATION</a>command to retrieve the consent URL:</li>
-<li><strong>DESC</strong> <strong>STORAGE</strong> <strong>INTEGRATION</strong> <strong>&lt;integration_name&gt;;</strong></li>
-</ol>
+## Grant Snowflake Access to the Storage Locations</strong></p>
+
+<p>Execute the&nbsp;<a href="https://docs.snowflake.com/en/sql-reference/sql/desc-integration">DESCRIBE INTEGRATION </a>command to retrieve the consent URL:</p>
+
+```sql
+DESC STORAGE_INTEGRATION <storage_integration_name>;
+```
 <p>Note the values in the following columns:</p>
 <p><strong>AZURE_CONSENT_URL</strong></p>
 <p>URL to the Microsoft permissions request page.</p>
